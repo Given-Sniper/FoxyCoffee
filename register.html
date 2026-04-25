@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoxyCoffee | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">FoxyCoffee</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="login.html">Login</a>
+        <a class="active" href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="form-page">
+    <section class="form-shell register-shell">
+      <div class="form-panel">
+        <p class="eyebrow">Create your account</p>
+        <h1>Register</h1>
+        <p>Join FoxyCoffee and keep your favorite picks ready for your next visit.</p>
+
+        <form class="auth-form" data-form="register">
+          <label for="register-name">Full Name</label>
+          <input id="register-name" name="fullName" type="text" placeholder="Your full name" required>
+
+          <label for="register-email">Email</label>
+          <input id="register-email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" placeholder="Create a password" required>
+
+          <label for="register-confirm">Confirm Password</label>
+          <input id="register-confirm" name="confirmPassword" type="password" placeholder="Confirm your password" required>
+
+          <button class="button primary-button" type="submit">Create Account</button>
+        </form>
+
+        <p class="form-link">Already have an account? <a href="login.html">Login</a></p>
+        <p class="form-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
